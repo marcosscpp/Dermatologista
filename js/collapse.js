@@ -2,13 +2,18 @@ var coll = document.getElementsByClassName("post");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
+  coll[i].addEventListener("mouseover", function () {
     var content = this.nextElementSibling;
-    if (content.style.maxHeight === "500px") {
-      content.style.maxHeight = "0";
-    } else {
-      content.style.maxHeight = "500px";
-    }
+    content.classList.add("active--post");
+  });
+
+  coll[i].addEventListener("mouseleave", function () {
+    var content = this.nextElementSibling;
+    content.classList.remove("active--post");
+  });
+
+  coll[i].addEventListener("click", function () {
+    var content = this.nextElementSibling;
+    content.classList.toggle("active--post-click");
   });
 }

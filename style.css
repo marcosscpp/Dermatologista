@@ -177,7 +177,8 @@ main {
   flex-direction: column;
 }
 
-.service__title {
+.service__title,
+.posts__title {
   color: var(--cor-fonte-titulos);
   font-size: 18px;
   font-weight: 700;
@@ -185,9 +186,11 @@ main {
 }
 
 .services__maintitle,
-.posts__title {
+.posts__maintitle,
+.newsletter__title {
   font-size: 30px;
   font-weight: 900;
+  text-align: center;
   width: 50%;
 }
 
@@ -228,11 +231,13 @@ main {
 }
 
 .posts {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
 .posts__title {
-  margin-bottom: 50px;
   text-align: center;
   width: 100%;
 }
@@ -252,8 +257,13 @@ main {
   width: 100%;
 }
 
+.posts__maintitle {
+  margin: 20px 0 60px 0;
+  width: 100%;
+}
+
 .content {
-  background-color: rgb(197, 188, 188);
+  background-color: #bae4fd;
   overflow: hidden;
   transition: 2s ease-in-out;
 }
@@ -282,6 +292,107 @@ main {
   max-height: 0;
 }
 
-.active-post .content {
+.active--post,
+.active--post-click {
   max-height: 500px;
+}
+
+.newsletter {
+  align-items: center;
+  background-color: var(--cor-fundo-partes);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  height: 150px;
+  padding: 65px 0;
+  width: 80%;
+}
+
+.newsletter__title {
+  font-weight: 700;
+}
+
+.newsletter__text {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.newsletter input {
+  border: 1px solid var(--cor-fonte-titulos);
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.newsletter input[type="submit"] {
+  background-color: var(--cor-primaria);
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.newsletter input[type="submit"]:hover,
+.intro__btn:hover {
+  background-color: var(--cor-fonte-titulos);
+}
+
+footer {
+  align-items: flex-start;
+  background-color: var(--cor-primaria);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 80px 120px;
+  justify-content: flex-start;
+  margin-top: 100px;
+  padding: 30px 70px 30px 70px;
+}
+
+footer i {
+  margin-right: 10px;
+}
+
+.footer__main {
+  width: 30%;
+}
+
+.footer__icons i {
+  font-size: 22px;
+}
+
+.footer__icons i:hover {
+  color: var(--cor-fundo-partes)
+}
+
+.footer__icons {
+  margin-top: 10px;
+}
+
+.footer__logo img {
+  filter: brightness(3) grayscale(1);
+  margin-left: 20px;
+  max-width: 50px;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+}
+
+.footer__main,
+footer ul {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+footer ul h4 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: 700;
 }
