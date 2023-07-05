@@ -350,7 +350,7 @@ footer {
   gap: 80px 120px;
   justify-content: flex-start;
   margin-top: 100px;
-  padding: 30px 70px 30px 70px;
+  padding: 30px 70px;
 }
 
 footer i {
@@ -460,7 +460,7 @@ footer ul h4 {
   }
 
   .post {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .newsletter {
@@ -481,5 +481,33 @@ footer ul h4 {
 
   .newsletter__title {
     width: 80%;
+  }
+
+  .footer__main {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer__logo img {
+    margin: 0;
+  }
+
+  footer {
+    gap: 40px;
+    padding: 30px 50px;
+  }
+
+  .footer__text {
+    display: none;
+  }
+
+  footer ul {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .copyright {
+    margin-top: 10px;
   }
 }
