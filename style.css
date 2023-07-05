@@ -94,6 +94,7 @@ main {
 }
 
 .intro__wrapper {
+  align-items: center;
   display: flex;
   gap: 28px;
   flex-direction: column;
@@ -196,6 +197,7 @@ main {
 
 .services__cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -364,7 +366,7 @@ footer i {
 }
 
 .footer__icons i:hover {
-  color: var(--cor-fundo-partes)
+  color: var(--cor-fundo-partes);
 }
 
 .footer__icons {
@@ -395,4 +397,89 @@ footer ul h4 {
   margin-bottom: 10px;
   margin-top: 20px;
   font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .intro {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .intro__wrapper {
+    gap: 30px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .intro__img {
+    max-width: 300px;
+    max-height: 350px;
+  }
+
+  .intro__titlemain {
+    font-size: 30px;
+  }
+
+  .intro__decoration {
+    width: 300px;
+    height: 300px;
+  }
+
+  .intro__right {
+    padding: 0;
+  }
+
+  .intro__text,
+  .intro__btn,
+  .services__text {
+    font-size: 14px;
+  }
+
+  .services {
+    padding: 0 5rem;
+  }
+
+  .services__maintitle {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .services__text,
+  .card {
+    width: 100%;
+  }
+
+  .services__cards {
+    gap: 50px;
+  }
+
+  .posts__maintitle {
+    font-size: 25px;
+    padding: 0 40px;
+    width: fit-content;
+  }
+
+  .post {
+    font-size: 14px;
+  }
+
+  .newsletter {
+    height: auto;
+    padding: 40px 10px;
+  }
+
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .newsletter__text {
+    text-align: center;
+    width: 90%;
+  }
+
+  .newsletter__title {
+    width: 80%;
+  }
 }
