@@ -37,6 +37,7 @@ main {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .menu__wrapper {
@@ -81,7 +82,13 @@ main {
 }
 
 .active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid;
+}
+
+.menu__hamburguer {
+  color: var(--cor-primaria);
+  display: none;
+  font-size: 24px;
 }
 
 /* Apresentação home */
@@ -400,6 +407,62 @@ footer ul h4 {
 }
 
 @media (max-width: 900px) {
+  header {
+    margin: 0;
+    padding: 1rem 1rem;
+  }
+
+  .menu {
+    align-items: center;
+  }
+
+  .menu__left {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+  }
+
+  .menu__link {
+    color: white;
+    font-weight: 700;
+  }
+  
+  .activate-space {
+    height: 240px;
+  }
+
+  .menu__list {
+    background-color: #204ea5;
+    display: none;
+    left: 0;
+    margin-top: 12px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+  }
+
+  .menu__active .menu__item {
+    padding: 20px 0;
+  }
+
+  .menu__item:hover {
+    background-color: var(--cor-fonte-titulos);
+  }
+
+  .menu__active {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .menu__hamburguer {
+    display: inline;
+    order: -1;
+  }
+
+  .menu__wrapper {
+    display: block;
+  }
+
   .intro {
     flex-direction: column;
     gap: 70px;
@@ -508,6 +571,6 @@ footer ul h4 {
   }
 
   .copyright {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }
