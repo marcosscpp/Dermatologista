@@ -9,6 +9,10 @@
   --cor-contraste: #ddc3f2;
 }
 
+p {
+  line-height: 18px;
+}
+
 .division {
   background-color: var(--cor-fonte-titulos);
   display: block;
@@ -262,6 +266,7 @@ main {
   font-size: 20px;
   font-weight: 900;
   height: 150px;
+  line-height: 1.5  ;
   padding: 0 40px;
   width: 100%;
 }
@@ -566,6 +571,7 @@ footer ul h4 {
   }
 
   footer ul {
+    align-items: center;
     gap: 10px;
     width: 100%;
   }
