@@ -471,6 +471,7 @@ footer ul h4 {
   .intro {
     flex-direction: column;
     gap: 70px;
+    padding: 0;
   }
 
   .intro__wrapper {
@@ -480,17 +481,18 @@ footer ul h4 {
   }
 
   .intro__img {
-    max-width: 300px;
-    max-height: 350px;
+    max-width: 250px;
+    max-height: 300px;
   }
 
   .intro__titlemain {
     font-size: 30px;
+    width: 80%;
   }
 
   .intro__decoration {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 
   .intro__right {
