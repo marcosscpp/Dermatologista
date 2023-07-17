@@ -12,7 +12,6 @@ let allArticle = document.getElementsByClassName("artic-link");
 let articlesQuantity = Math.round(totalHeight / allArticle[0].offsetHeight);
 
 for (let i = 0; i < allArticle.length; i++) {
-  console.log(i);
   if (articlesQuantity - 1 == i) {
     allArticle[i].remove();
   }
