@@ -726,6 +726,10 @@ aside {
     width: 80%;
   }
 
+  .article__img {
+    height: auto;
+  }
+
   .autor {
     margin-top: 20px;
   }
