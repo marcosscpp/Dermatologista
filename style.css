@@ -436,6 +436,7 @@ article {
 
 .article__tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -445,6 +446,7 @@ article {
   color: white;
   font-size: 0.8rem;
   padding: 5px 10px;
+  text-align: center;
 }
 
 .article__img {
