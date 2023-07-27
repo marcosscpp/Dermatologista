@@ -743,6 +743,7 @@ aside {
 
   .artic {
     margin: 0 auto;
+    min-height: 300px;
     width: 90%;
   }
 
@@ -757,9 +758,21 @@ aside {
   .search {
     display: flex;
     flex-direction: column;
-    
   }
-  .search input, .search input[type="submit"] {
+  .search input,
+  .search input[type="submit"] {
     padding: 4px 8px;
   }
 }
+
+.js .scroll-js, .js .division{
+  opacity: 0;
+  transition: 1s;
+  transform: translate3d(0, 20px, 0);
+}
+
+.js .scroll-js.ativo, .js .division.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
